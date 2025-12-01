@@ -1,0 +1,16 @@
+backpack
+bowl
+cat
+skateboard
+bottle
+cake
+tie
+vase
+sheep
+toothbrush
+teddy bear
+suitcase
+mouse
+knife
+chair
+umbrella

@@ -1,0 +1,16 @@
+teapot
+corgi
+furby
+robot
+turtle
+rabbit
+butterfly
+key
+pig
+bee
+tiger
+hammer
+monkey
+razor
+snake
+stapler

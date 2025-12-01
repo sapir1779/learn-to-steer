@@ -1,0 +1,17 @@
+backpack
+bowl
+cat
+sneakers
+duck
+robot
+teapot
+vase
+corgi
+mug
+furby
+teddy bear
+frog
+mouse
+table
+chair
+umbrella

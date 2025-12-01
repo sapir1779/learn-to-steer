@@ -1,0 +1,52 @@
+# Configuration for the Relation Classification model training
+model:
+    extractor:
+        nhead: 2
+        num_layers: 2
+        dim_feedforward: 128
+        layer_attn_nheads: 2
+        dropout: 0.3
+        timestep_embedding:
+            enable: True
+            mode: "mid"
+    classifier: 
+        mode: "multiclass"
+        timestep_embedding_dim: 16
+        nhead: 4
+        num_layers: 2
+        dim_feedforward: 128
+        fc_ver: "v1"
+        dropout: 0.3
+    map_size: 16
+    d_model: 256
+    num_timesteps: 50
+    architecture: "attention"
+
+
+training:
+    device: "cuda"
+    lr: 0.0001
+    weight_decay: 0.05
+    num_epochs: 150
+    early_stopping:
+        patience: 10
+        min_delta: 0.0
+    checkpoint_interval: 5
+    batch_size: 64
+    shuffle: True
+    exp_name: "sd14"
+    scheduler:
+        enable: True
+        factor: 0.5
+        patience: 5
+    timesteps: [5, 10, 15, 20, 25, 49]
+    num_timesteps: 50
+    data_size: -1  # if greater than 0, only uses "data_size" training samples rather than the full set
+        
+
+paths:
+    dataset_folder_path: 
+        - "/cortex/users/sapiry7/workspace/RELATION_CLASSIFIER_TRAINING_DATA/SD14__GQA__IS_A__800_200_100/"
+        - "/cortex/users/sapiry7/workspace/RELATION_CLASSIFIER_TRAINING_DATA/SD14__ORM__above_below_left_right__white_green__800_100_70"
+
+    checkpoint_dir: "/cortex/users/sapiry7/workspace/RELATION_CLASSIFIER_CHECKPOINTS/"
