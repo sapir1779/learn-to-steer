@@ -74,12 +74,13 @@ See [ood_multiple_rels_evaluation/README.md](ood_multiple_rels_evaluation/README
 ## Citation  
 If you use this code, please cite our work:
 ```bibtex
-@inproceedings{yiflach2026data,
-  title={Data-Driven Loss Functions for Inference-Time Optimization in Text-to-Image},
-  author={Yiflach, Sapir Esther and Atzmon, Yuval and Chechik, Gal},
-  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
-  pages={3525--3535},
-  year={2026}
+@InProceedings{Yiflach_2026_WACV,
+    author    = {Yiflach, Sapir Esther and Atzmon, Yuval and Chechik, Gal},
+    title     = {Data-Driven Loss Functions for Inference-Time Optimization in Text-to-Image},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {March},
+    year      = {2026},
+    pages     = {3525-3535}
 }
 ```
 
